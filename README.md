@@ -1,5 +1,5 @@
 # MPV Stereo Downmix
-This is a .lua script for MPV that automatically downmixes surround sound to old school stereo with a customizable mix, utilising MPV's implementation of FFmpeg's lavfi filtering library.
+This is a .lua script for MPV that downmixes surround sound to old school stereo with a customizable mix, utilising MPV's implementation of FFmpeg's lavfi filtering library.
 
 Suitable for typical stereo setups with 2 loudspeakers or headphones.
 
@@ -9,7 +9,7 @@ Current supported surround sound layouts:
   - 5.1
   - 7.1
 
-Previous methods I've used relied on profiles to downmix the sound which kept interfering with other profiles used to apply shaders, so having it separate in a script seemed a better way.
+Previous methods I've used relied on profiles to downmix the sound which kept interfering with other shader profiles, so having it separate in a script seemed a cleaner way.
 
 
 # Installation
@@ -60,7 +60,7 @@ to
 lavfi=[pan=stereo|FL=FL+0.9*FC+0.5*SL+0.3*LFE|FR=FR+0.9*FC+0.5*SR+0.3*LFE]
 ```
 
-NB: There is no normalisation of audio after these effects are applied.
+NB: There is no normalisation of audio after these effects are applied (yet). If you expereience clipping or distortion try enabling audio-normalize-downmix=yes in your mpv.conf file (no guarantee it will work, as downmixing happens outside of the mpv.conf file)
 
 # Troubleshooting
 The script have been tested on these setups:
