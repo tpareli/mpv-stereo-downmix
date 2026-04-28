@@ -22,8 +22,10 @@ Default directory location on linux is
 
 # Channel layout, parameters and coefficients
 
-### Standard surround sound channel layouts
-For 5.1 Surround Sound:
+#### Standard surround sound channel layouts
+
+5.1 Surround Sound:
+
 | Channel | Abbreviation | Description | Position |
 | --- | --- | --- | --- |
 | 1 | FL | Front Left | Left of the listener |
@@ -33,7 +35,8 @@ For 5.1 Surround Sound:
 | 5 | SL | Side Left (Surround Left) | Left side of the listener |
 | 6 | SR | Side Right (Surround Right) | Right side of the listener |
 
-For 7.1 Surround Sound:
+7.1 Surround Sound:
+
 | Channel | Abbreviation | Description | Position |
 | --- | --- | --- | --- |
 | 1 | FL | Front Left | Left of the listener |
