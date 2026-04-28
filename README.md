@@ -9,7 +9,7 @@ Current supported surround sound layouts:
   - 5.1
   - 7.1
 
-Previous methods I've used have relied on profiles to downmix the sound which kept interfering with other profiles used to apply shaders, so having it separate in a script seemed a better way.
+Previous methods I've used relied on profiles to downmix the sound which kept interfering with other profiles used to apply shaders, so having it separate in a script seemed a better way.
 
 
 # Installation
