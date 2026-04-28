@@ -17,7 +17,7 @@ Download auto-downmix.lua and place it in your scripts folder.
 
 Default directory location on linux is 
 ```
-~/.config/mpv/scripts on Linux
+~/.config/mpv/scripts
 ```
 
 # Channel layout, parameters and coefficients
