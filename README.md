@@ -8,6 +8,7 @@ Current supported surround sound layouts:
   - 7.1
 
 If you want to adjust the current parameters you can change the values in the downmix_presets table in auto-downmix.lua to suit your needs.
+
 Previous methods I've used have relied on profiles to downmix the sound which kept interfering with other profiles used to apply shaders, so having it separate in a script seemed a better way.
 
 
@@ -38,10 +39,13 @@ For 7.1 Surround Sound:
 | 7 | BL | Back Left (Rear Surround Left) | Behind the listener, left |
 | 8 | BR | Back Right (Rear Surround Right) | Behind the listener, right |
 
+
+### Example
 So if you want more dialogue in your stereo mix you can adjust the Front Center (FC) coefficient.
 Example using 5.1 downmix:
 Change the default
 > lavfi=[pan=stereo|FL=FL+0.707*FC+0.5*SL+0.3*LFE|FR=FR+0.707*FC+0.5*SR+0.3*LFE]
+
 to
 > lavfi=[pan=stereo|FL=FL+0.9*FC+0.5*SL+0.3*LFE|FR=FR+0.9*FC+0.5*SR+0.3*LFE]
 
