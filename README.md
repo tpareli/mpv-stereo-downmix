@@ -22,9 +22,7 @@ Default directory location on linux is
 
 # Channel layout, parameters and coefficients
 
-#### Standard surround sound channel layouts
-
-5.1 Surround Sound:
+#### Standard 5.1 surround sound channel layout
 
 | Channel | Abbreviation | Description | Position |
 | --- | --- | --- | --- |
@@ -35,7 +33,7 @@ Default directory location on linux is
 | 5 | SL | Side Left (Surround Left) | Left side of the listener |
 | 6 | SR | Side Right (Surround Right) | Right side of the listener |
 
-7.1 Surround Sound:
+#### Standard 7.1 surround sound channel layout
 
 | Channel | Abbreviation | Description | Position |
 | --- | --- | --- | --- |
@@ -49,7 +47,7 @@ Default directory location on linux is
 | 8 | BR | Back Right (Rear Surround Right) | Behind the listener, right |
 
 
-### Example
+### Adjusting channel coefficients
 If you want to adjust the current parameters you can change the values in the downmix_presets table in auto-downmix.lua.
 So if you want more dialogue in your stereo mix you can adjust the Front Center (FC) coefficient.
 
