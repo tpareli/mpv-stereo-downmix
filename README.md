@@ -13,7 +13,7 @@ Previous methods I've used relied on profiles to downmix the sound which kept in
 
 
 # Installation
-Download auto-downmix.lua and place it in your scripts folder. 
+Download auto-stereo-downmix.lua and place it in your scripts folder. 
 
 Default directory location on linux is 
 ```
@@ -24,7 +24,7 @@ Default directory location on linux is
 
 #### Standard 5.1 surround sound channel layout
 
-| Channel | Abbreviation | Description | Position |
+| Channel | Parameter | Description | Position |
 | --- | --- | --- | --- |
 | 1 | FL | Front Left | Left of the listener |
 | 2 | FR | Front Right | Right of the listener |
@@ -35,7 +35,7 @@ Default directory location on linux is
 
 #### Standard 7.1 surround sound channel layout
 
-| Channel | Abbreviation | Description | Position |
+| Channel | Parameter | Description | Position |
 | --- | --- | --- | --- |
 | 1 | FL | Front Left | Left of the listener |
 | 2 | FR | Front Right | Right of the listener |
@@ -48,8 +48,9 @@ Default directory location on linux is
 
 
 ### Adjusting channel coefficients
-If you want to adjust the current parameters you can change the values in the downmix_presets table in auto-downmix.lua.
-So if you want more dialogue in your stereo mix you can adjust the Front Center (FC) coefficient.
+If the default values in the script is not to your liking and you wish to adjust the current coefficients you can change the values in the downmix_presets table in auto-stereo-downmix.lua.
+
+Should you want more dialogue in your stereo mix you can adjust the Front Center (FC) coefficient.
 
 Example using 5.1 downmix:
 
@@ -66,7 +67,7 @@ where
 ```
 0.707*FC -> 0.9*FC
 ```
-increases the amount of Front Center in your stereo mix.
+increases the amount of Front Center in your stereo mix, thus increasing dialogue audio levels.
 
 NB: There is no normalisation of audio after these effects are applied (yet). If you expereience clipping or distortion (have not experienced it yet) try enabling audio-normalize-downmix=yes in your mpv.conf file (no guarantee it will work, as downmixing happens outside of the mpv.conf file)
 
