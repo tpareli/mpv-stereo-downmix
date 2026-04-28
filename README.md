@@ -82,4 +82,4 @@ A first step is to comment out anything related to --audio-channels=<auto-safe|a
 
 Enabling the Playback statistics overview and checking the Audio section should show Channels: 6 -> 2 for 5.1 audio and 8 -> 2 for 7.1, with the appropriate filter applied visible at the bottom of the audio section. 
 
-The current audio channel count detection should work with all common audio codecs used in videos.
+The current audio channel count detection should work with most common audio codecs used in videos.
