@@ -1,6 +1,8 @@
 # MPV Stereo Downmix
 This is a .lua script for MPV that automatically downmixes surround sound to old school stereo with a customizable mix.
 
+Suitable for typical stereo setups with 2 loudspeakers or headphones.
+
 Current supported surround sound layouts:
   - 2.1
   - 4.0
