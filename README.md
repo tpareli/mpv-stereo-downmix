@@ -65,7 +65,7 @@ lavfi=[pan=stereo|FL=FL+0.9*FC+0.5*SL+0.3*LFE|FR=FR+0.9*FC+0.5*SR+0.3*LFE]
 ```
 where
 ```
-0.707*FC -> 0.9*FC
+0.707*FC -> 0.9*FC (or any number you want really, 0.9 was used just as an example here)
 ```
 increases the amount of Front Center in your stereo mix, thus increasing dialogue audio levels.
 
