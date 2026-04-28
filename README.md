@@ -42,7 +42,9 @@ For 7.1 Surround Sound:
 
 ### Example
 So if you want more dialogue in your stereo mix you can adjust the Front Center (FC) coefficient.
+
 Example using 5.1 downmix:
+
 Change the default
 ```
 lavfi=[pan=stereo|FL=FL+0.707*FC+0.5*SL+0.3*LFE|FR=FR+0.707*FC+0.5*SR+0.3*LFE]
