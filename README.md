@@ -62,8 +62,13 @@ to
 ```
 lavfi=[pan=stereo|FL=FL+0.9*FC+0.5*SL+0.3*LFE|FR=FR+0.9*FC+0.5*SR+0.3*LFE]
 ```
+where
+```
+0.707*FC -> 0.9*FC
+```
+increases the amount of Front Center in your stereo mix.
 
-NB: There is no normalisation of audio after these effects are applied (yet). If you expereience clipping or distortion try enabling audio-normalize-downmix=yes in your mpv.conf file (no guarantee it will work, as downmixing happens outside of the mpv.conf file)
+NB: There is no normalisation of audio after these effects are applied (yet). If you expereience clipping or distortion (have not experienced it yet) try enabling audio-normalize-downmix=yes in your mpv.conf file (no guarantee it will work, as downmixing happens outside of the mpv.conf file)
 
 # Troubleshooting
 The script have been tested on these setups:
