@@ -55,6 +55,7 @@ to
 lavfi=[pan=stereo|FL=FL+0.9*FC+0.5*SL+0.3*LFE|FR=FR+0.9*FC+0.5*SR+0.3*LFE]
 ```
 
+NB: There is no normalisation of audio after these effects are implemented.
 
 # Troubleshooting
 The script have been tested on these setups:
