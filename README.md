@@ -13,8 +13,12 @@ Previous methods I've used have relied on profiles to downmix the sound which ke
 
 
 # Installation
-Download auto-downmix.lua and place it in your scripts folder. (~/.config/mpv/scripts on Linux)
+Download auto-downmix.lua and place it in your scripts folder. 
 
+Default directory location on linux is 
+```
+~/.config/mpv/scripts on Linux
+```
 
 # Channel layout, parameters and coefficients
 For 5.1 Surround Sound:
